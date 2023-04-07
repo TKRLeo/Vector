@@ -1,0 +1,13 @@
+# ninja log v5
+0	62	7026044045554565	CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj	c4b7d9f00fa0e7e5
+73	155	7026044046321980	Project.exe	95bb12d67fe9e80c
+10	125	7026074535896468	CMakeFiles/Project.dir/vector/vector.c.obj	306590a81b94c110
+4	130	7026075129829029	CMakeFiles/Project.dir/vector/vector.c.obj	306590a81b94c110
+16	131	7026075129858526	CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj	c4b7d9f00fa0e7e5
+132	335	7026075131844126	Project.exe	b499cc9a0a38ce9c
+11	120	7026087495211354	CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj	c4b7d9f00fa0e7e5
+3	122	7026087495221327	CMakeFiles/Project.dir/vector/vector.c.obj	306590a81b94c110
+122	352	7026087497472344	Project.exe	b499cc9a0a38ce9c
+6	228	7026088593095736	CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj	c4b7d9f00fa0e7e5
+26	236	7026088593171418	CMakeFiles/Project.dir/vector/vector.c.obj	306590a81b94c110
+237	447	7026088595176943	Project.exe	b499cc9a0a38ce9c

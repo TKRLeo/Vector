@@ -1,0 +1,4 @@
+#ifndef PROJECT_VECTOR_H
+#define PROJECT_VECTOR_H
+
+#endif //PROJECT_VECTOR_H
