@@ -25,4 +25,5 @@ void popBack(Vector *v);
 int* atVector(Vector *v, size_t index);
 int* back(Vector *v);
 int* front(Vector *v);
+Vector createVecFromArr(int *a, size_t size);
 #endif //PROJECT_VECTOR_H

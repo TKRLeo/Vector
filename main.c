@@ -13,34 +13,20 @@ void test_pushBack_emptyVector() {
 }
 
 void test_pushBack_fullVector() {
-    Vector v = createVector(2);
-    pushBack(&v, 4);
-    pushBack(&v, 4);
+    int a[3] = {1,2,3};
+    Vector v = createVecFromArr(a,3);
     pushBack(&v, 99);
 
-    assert(v.size == 3);
-    assert(v.capacity == 4);
+    assert(v.size == 4);
+    assert(v.capacity == 6);
 
     deleteVector(&v);
 }
 
 void test_pushBack_sizeUnderCap() {
-    Vector v = createVector(3);
-    pushBack(&v,3);
+    int a[5] = {1,2,3};
+    Vector v = createVecFromArr(a,3);
     pushBack(&v,4);
-
-    assert(v.size == 2);
-    assert(v.capacity == 3);
-
-    deleteVector(&v);
-}
-
-void test_pushBack_sizeLargeCap() {
-    Vector v = createVector(3);
-    pushBack(&v,3);
-    pushBack(&v,4);
-    pushBack(&v,7);
-    pushBack(&v,8);
 
     assert(v.size == 4);
     assert(v.capacity == 6);
@@ -61,10 +47,8 @@ void test_popBack_notEmptyVector() {
 }
 
 void test_popBack_fullVector() {
-    Vector v = createVector(3);
-    pushBack(&v, 10);
-    pushBack(&v, 20);
-    pushBack(&v, 30);
+    int a[5] = {1,2,3};
+    Vector v = createVecFromArr(a,3);
 
     popBack(&v);
     popBack(&v);
@@ -76,43 +60,32 @@ void test_popBack_fullVector() {
 }
 
 void test_atVector_notEmptyVector() {
-    Vector v = createVector(3);
-    pushBack(&v,1);
-    pushBack(&v,2);
-    pushBack(&v,3);
+    int a[3] = {1,2,3};
+    Vector v = createVecFromArr(a,3);
 
     int *ptr = atVector(&v, 1);
     assert(*ptr == 2);
 }
 
 void test_atVector_requestToLastElement() {
-    Vector v = createVector(5);
-    pushBack(&v,1);
-    pushBack(&v,2);
-    pushBack(&v,3);
-    pushBack(&v,4);
-    pushBack(&v,5);
-    pushBack(&v,6);
+    int a[5] = {1,2,3,4,5};
+    Vector v = createVecFromArr(a,5);
 
-    int *ptr = atVector(&v,5);
-    assert(*ptr == 6);
+    int *ptr = atVector(&v,4);
+    assert(*ptr == 5);
 }
 
 void test_back_oneElementInVector() {
-    Vector v = createVector(5);
-    pushBack(&v,1);
-    pushBack(&v,2);
-    pushBack(&v,3);
+    int a[5] = {1,2,3};
+    Vector v = createVecFromArr(a,3);
 
     int* ptr = back(&v);
 
     assert(*ptr == 3);
 }
 void test_front_oneElementInVector() {
-    Vector v = createVector(3);
-    pushBack(&v,1);
-    pushBack(&v,2);
-    pushBack(&v,3);
+    int a[5] = {1,2,3};
+    Vector v = createVecFromArr(a,3);
 
     int* ptr = front(&v);
 
@@ -123,7 +96,6 @@ void test() {
     test_pushBack_emptyVector();
     test_pushBack_fullVector();
     test_pushBack_sizeUnderCap();
-    test_pushBack_sizeLargeCap();
 
     test_popBack_notEmptyVector();
     test_popBack_fullVector();

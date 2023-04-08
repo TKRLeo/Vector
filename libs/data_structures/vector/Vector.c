@@ -81,3 +81,12 @@ int* back(Vector *v) {
 int* front(Vector *v) {
     return v->data;
 }
+
+Vector createVecFromArr(int *a, size_t size) {
+    Vector v;
+    v.data = malloc(sizeof(int) * size);
+
+    memcpy(v.data, a, sizeof(int) * size);
+
+    return (Vector) {v.data, size, size};
+}
