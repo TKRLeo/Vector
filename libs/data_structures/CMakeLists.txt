@@ -3,8 +3,8 @@ project(Project C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Project ../../main.c vector/vector.c)
+add_executable(Project ../../main.c vector/Vector.c)
 
 add_library(data_structures
-        vector/vector.c
-        vector/vector.h)
+        vector/Vector.c
+        vector/Vector.h)

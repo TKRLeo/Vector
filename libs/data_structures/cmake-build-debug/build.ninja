@@ -55,8 +55,8 @@ build CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj: C_CO
   OBJECT_DIR = CMakeFiles\Project.dir
   OBJECT_FILE_DIR = CMakeFiles\Project.dir\C_\Users\Lev\CLionProjects\Project
 
-build CMakeFiles/Project.dir/vector/vector.c.obj: C_COMPILER__Project_Debug C$:/Users/Lev/CLionProjects/Project/libs/data_structures/vector/vector.c || cmake_object_order_depends_target_Project
-  DEP_FILE = CMakeFiles\Project.dir\vector\vector.c.obj.d
+build CMakeFiles/Project.dir/vector/Vector.c.obj: C_COMPILER__Project_Debug C$:/Users/Lev/CLionProjects/Project/libs/data_structures/vector/Vector.c || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles\Project.dir\vector\Vector.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\Project.dir
   OBJECT_FILE_DIR = CMakeFiles\Project.dir\vector
@@ -69,7 +69,7 @@ build CMakeFiles/Project.dir/vector/vector.c.obj: C_COMPILER__Project_Debug C$:/
 #############################################
 # Link the executable Project.exe
 
-build Project.exe: C_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj CMakeFiles/Project.dir/vector/vector.c.obj
+build Project.exe: C_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/C_/Users/Lev/CLionProjects/Project/main.c.obj CMakeFiles/Project.dir/vector/Vector.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Project.dir
@@ -88,8 +88,8 @@ build Project.exe: C_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/C_/
 
 build cmake_object_order_depends_target_data_structures: phony || CMakeFiles/data_structures.dir
 
-build CMakeFiles/data_structures.dir/vector/vector.c.obj: C_COMPILER__data_structures_Debug C$:/Users/Lev/CLionProjects/Project/libs/data_structures/vector/vector.c || cmake_object_order_depends_target_data_structures
-  DEP_FILE = CMakeFiles\data_structures.dir\vector\vector.c.obj.d
+build CMakeFiles/data_structures.dir/vector/Vector.c.obj: C_COMPILER__data_structures_Debug C$:/Users/Lev/CLionProjects/Project/libs/data_structures/vector/Vector.c || cmake_object_order_depends_target_data_structures
+  DEP_FILE = CMakeFiles\data_structures.dir\vector\Vector.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\data_structures.dir
   OBJECT_FILE_DIR = CMakeFiles\data_structures.dir\vector
@@ -102,7 +102,7 @@ build CMakeFiles/data_structures.dir/vector/vector.c.obj: C_COMPILER__data_struc
 #############################################
 # Link the static library libdata_structures.a
 
-build libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug CMakeFiles/data_structures.dir/vector/vector.c.obj
+build libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug CMakeFiles/data_structures.dir/vector/Vector.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\data_structures.dir
   POST_BUILD = cd .
