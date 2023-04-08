@@ -7,10 +7,7 @@ Vector createVector(size_t n) {
         exit(1);
     }
 
-    vec.capacity = n;
-    vec.size = 0;
-
-    return vec;
+    return (Vector) {vec.data, 0, n};
 }
 
 void reserve(Vector *v, size_t newCapacity) {
